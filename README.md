@@ -1,3 +1,3 @@
 # Проект "Посмотри в окно"
 ## Глухих Александр 🐑
-[Ссылка на репозиторий](https://github.com/Whimsy-rat-trap/slozhno-sosredotochitsya-fd)
+[Ссылка на репозиторий](git@github.com:Whimsy-rat-trap/slozhno-sosredotochitsya-fd.git)
