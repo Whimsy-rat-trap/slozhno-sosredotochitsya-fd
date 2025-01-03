@@ -1,34 +1,68 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+.page.theme_light {
+  --rec-visibility: hidden;
 
-:root.theme-light {
-  --background-image: url("../images/cover-image-light.png");
-  --accent-color: #ff8dcb;
-  --opacity-color: #32312d66;
-  --text-color: #353430;
-  --decor-color: var(--text-color);
-  --background-color: #fff1f7;
-  --header-color: #ffc2e6;
-  --heading-color: var(--text-color);
-  --subtitle-color: var(--text-color);
-  --text-color-header: var(--text-color);
-  --is-light: hidden;
-} 
+  --bg-color: #FFF1F7;
+  --hover: #32312D66;
+
+  --prim-color: #FF0070; /*1*/
+  --sec-color: #DB00FF; /*2*/
+  --tert-color: #353430; /*3*/
+  --quater-color: #FF0070; /*4*/
+
+  --bg-image: url('../images/cover-image-light.png');
+
+  --background-color: var(--bg-color);
+
+  --border-style-hover: var(--hover);
+
+  --highlight: var(--prim-color);
+  --text-color-highlight: var(--prim-color);
+  --article-header-color: var(--prim-color);
+  
+  --heading-color: var(--sec-color);
+
+  --text-color-main: var(--tert-color);
+  --titles-text: var(--tert-color);
+  --btn-text-color: var(--tert-color);
+  --title-question: var(--tert-color);
+  --corner-color: var(--tert-color);
+
+  --text-shadow: var(--quater-color);
+  --border-style: var(--quater-color);
+}
 
 @media (prefers-color-scheme: light) {
-  .page {
-    --background-image: url(../images/cover-image-light.png);
-    --title-color: #353430;
-    --text-color: #353430;
-    --hover-color: #32312D66;
-    --decorated-color: #353430;
-    --display: none;
-    --accent-color: #FF8DCB;
-    --main-color: #FFC2E6;
-    --title-decor-color: #FF8DCB;
-    --bg-color: #fff1f7;
+  :root {
+      --rec-visibility: hidden;
+
+      --light: #FFF1F7;
+      --hover: #32312D66;
+
+      --prim-color: #FF0070; /*1*/
+      --sec-color: #DB00FF; /*2*/
+      --tert-color: #353430; /*3*/
+      --quater-color: #FF0070; /*4*/
+
+      --bg-color: #FFF1F7;
+
+      --border-style-hover: var(--hover);
+
+      --highlight: var(--prim-color);
+      --text-color-highlight: var(--prim-color);
+      --article-header-color: var(--prim-color);
+
+      --heading-color: var(--sec-color);
+
+      --btn-text-color: var(--tert-color);
+      --text-color-main: var(--tert-color);
+      --corner-color: var(--tert-color);
+      --border-style: var(--tert-color);
+      --title-question: var(--tert-color);
+      --titles-text: var(--tert-color);
+
+      --text-shadow: var(--quater-color);
+
+      --bg-image: url('../images/cover-image-light.png');
+      --background-color: var(--bg-color);
     }
 }

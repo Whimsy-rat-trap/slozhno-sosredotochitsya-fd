@@ -1,43 +1,71 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+.page.theme_dark {
 
-/*:root.theme-dark {
-    сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-/* } */
+  --rec-visibility: visible;
 
-
-.theme-dark .page {
-  --main-color: #db00ff;
-  --background-image: url(../images/cover-image-dark.png);
-  --title-color: #000028;
-  --display: flex;
-  --accent-color: #ff0070;
-  --accent-font: "IBM Plex Mono"; 
-  --hover-color: #ff007066;
-  --title-decor-color: #ff0070;
-  --text-color: #f1b2ce;
-  --decorated-color: #ff0070;
   --bg-color: #000028;
+  --txt-color: #F1B2CE;
+  --hover: #FF007066;
+
+  --prim-color: #FF0070; /*1*/
+  --sec-color: #DB00FF; /*2*/
+  --tert-color: #353430; /*3*/
+
+  --bg-image: url('../images/cover-image-dark.png');
+
+  --background-color: var(--bg-color);
+  --text-color-transparent: var(--bg-color);
+  --titles-text: var(--bg-color);
+
+  --text-color-main: var(--txt-color);
+
+  --border-style-hover: var(--hover);
+
+  --highlight: var(--prim-color);
+  --text-color-highlight: var(--prim-color);
+  --article-header-color: var(--prim-color);
+  --text-shadow: var(--prim-color);
+  --corner-color: var(--prim-color);
+  --border-style: var(--prim-color);
+  --btn-text-color: var(--prim-color);
+  --title-question: var(--prim-color);
+
+  --heading-color: var(--sec-color);
+  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --background-image: url("../images/cover-image-dark.png");
-  --accent-color: #ff0070;
-  --opacity-color: #ff007066;
-  --text-color: #f1b2ce;
-  --decor-color: var(--accent-color);
-  --background-color: #000028;
-  --header-color: #db00ff;
-  --heading-color: var(--accent-color);
-  --subtitle-color: var(--background-color);
-  --is-light: visible;
-  --text-color-header: var(--background-color);
+      --rec-visibility: visible;
+
+      --bg-color: #000028;
+      --txt-color: #F1B2CE;
+      --hover: #FF007066;
+
+      --prim-color: #FF0070;
+      --sec-color: #DB00FF;
+      --tert-color: #353430; /*3*/
+
+      --bg-image: url('../images/cover-image-dark.png');
+
+      --background-color: var(--bg-color);
+      --text-color-transparent: var(--bg-color);
+      --titles-text: var(--bg-color);
+      
+      --text-color-main: var(--txt-color);
+
+      --border-style-hover: var(--hover);
+      
+      --highlight: var(--prim-color);
+      --highlighted-area: var(--prim-color);
+      --text-color-highlight: var(--prim-color);
+      --article-header-color: var(--prim-color);
+      --title-question: var(--prim-color);
+      --text-shadow: var(--prim-color);
+      --corner-color: var(--prim-color);
+      --border-style: var(--prim-color);
+      --btn-text-color: var(--prim-color);
+
+      --heading-color: var(--sec-color);
+
   }
 }
